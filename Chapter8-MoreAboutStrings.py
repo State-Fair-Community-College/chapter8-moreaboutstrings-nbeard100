@@ -1,8 +1,8 @@
 # --------------------------------------------
-# Name:
-# Date:
+# Name: Natalie Beard
+# Date: 4/6/2026
 # Program: Chapter 8 Practice
-# Description:
+# Description: Practice new string skills
 # Complete each section by following the
 # directions in the comments.
 # --------------------------------------------
@@ -20,7 +20,13 @@
 #    string on its own line
 # 5. Print the total length of the string using len()
 print()  # blank line
-
+message = "Hello, World!"
+print(message[0])
+print(message[-1])
+for i in message:
+    print(i)
+print(len(message))
+      
 # ------------------------------------------------
 # Practice 2: String Slicing and Concatenation
 # ------------------------------------------------
@@ -34,7 +40,16 @@ print()  # blank line
 #    then concatenate them with a comma and space in between
 #    and print the result  (e.g. 'Smith, Jane')
 print()
+full_name = "Natalie Beard"
 
+first = (full_name[0:7])
+last = (full_name[5:-1])
+print(first)
+print(last)
+
+print(f"{last}.{first}")
+
+      
 # ------------------------------------------------
 # Practice 3: String Testing Methods
 # ------------------------------------------------
@@ -49,7 +64,10 @@ print()
 # 5. Use isupper() to check if it is all uppercase
 #    and print the result
 print()
-
+user_input = input("Enter a string: ")
+                   
+print(user_input.isalpha())
+print(user_isdigit())
 # ------------------------------------------------
 # Practice 4: Searching and Manipulating Strings
 # ------------------------------------------------
@@ -68,6 +86,15 @@ print()
 #    with 'dog' and print the result
 print()
 
+sentence = "The quick brown fox jumps over the lazy dog"
+
+print(sentence.lower())
+print(sentence.upper())
+print(sentence.replace('fox', 'cat'))
+print(sentence.find('jumps'))
+print(sentence.startswith('The'))
+print(sentence.endswith('dog'))
+
 # ------------------------------------------------
 # Practice 5: Debug the String Program
 # ------------------------------------------------
@@ -82,13 +109,13 @@ print()
 # Fix them so the program works correctly.
 
 full_name = 'marie curie'
-name_parts = full_name.Split()
+name_parts = full_name.split()
 
 print(full_name.upper())
 
-if full_name.replace(' ', '').isAlpha():
+if full_name.replace(' ', '').isalpha():
     print('Contains only letters')
 
 for part in name_parts:
-    print(part.Capitalize())
+    print(part.capitalize())
 print()
